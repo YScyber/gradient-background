@@ -1,0 +1,85 @@
+@charset "UTF-8";
+section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+/* 線形グラデーション */
+.linear {
+    background: linear-gradient(rgba(255, 0, 0, 0.8), rgba(0, 255, 0, 0.8), rgba(0, 0, 255, 0.8));
+}
+
+/* 繰り返し線形グラデーション */
+.repeatingLinear {
+    background: repeating-linear-gradient(-45deg, brown 0 5px, yellow 5px 10px);
+}
+
+.repeatingHorizontalLine {
+    background: repeating-linear-gradient(to top, rgb(30, 236, 240) 0% 8%, rgb(71, 6, 67) 20%);
+}
+
+.multiRepeatingLinear {
+    background: repeating-linear-gradient(190deg, rgba(255, 0, 0, 0.5) 10px, rgba(255, 153, 0, 0.5) 30px, rgba(255, 255, 0, 0.5) 50px, rgba(0, 255, 0, 0.5) 70px, rgba(0, 0, 255, 0.5) 90px, rgba(75, 0, 130, 0.5) 110px, rgba(238, 130, 238, 0.5) 130px, rgba(255, 0, 0, 0.5) 150px),
+                repeating-linear-gradient(-190deg, rgba(255, 0, 0, 0.5) 20px, rgba(255, 153, 0, 0.5) 40px, rgba(255, 255, 0, 0.5) 60px, rgba(0, 255, 0, 0.5) 80px, rgba(0, 0, 255, 0.5) 100px, rgba(75, 0, 130, 0.5) 120px, rgba(238, 130, 238, 0.5) 140px, rgba(255, 0, 0, 0.5) 160px),
+                repeating-linear-gradient(23deg, red 10px, orange 20px, yellow 30px, green 40px, blue 50px, indigo 60px, violet 70px, red 80px);
+}
+
+.plaidGradient {
+    background: repeating-linear-gradient(90deg, transparent 0 15px, rgba(21, 27, 0, 0.25) 15px 30px, transparent 30px 45px, rgba(21, 27, 0, 0.25) 45px 60px, transparent 60px 75px, rgba(21, 0, 106, 0.25) 75px 90px),
+                repeating-linear-gradient(0deg, transparent 0 15px, rgba(21, 27, 0, 0.25) 15px 30px, transparent 30px 45px, rgba(21, 27, 0, 0.25) 45px 60px, transparent 60px 75px, rgba(21, 0, 106, 0.25) 75px 90px),
+                repeating-linear-gradient(-45deg, transparent 0 5px, rgba(113, 117, 36, 0.25) 5px 20px),
+                repeating-linear-gradient(45deg, transparent 0 5px, rgba(113, 117, 36, 0.25) 5px 20px);
+}
+
+/* 放射グラデーション */
+.radial {
+    background: radial-gradient(rgba(255, 0, 0, 0.5), rgba(0, 255, 0, 0.5), rgba(0, 0, 255, 0.5));
+}
+
+/* 繰り返し放射グラデーション */
+.repeatingRadial {
+    background: repeating-radial-gradient(rgb(0, 255, 255, 0.7) 0 20px, rgb(0, 255, 255, 0.4) 20px 40px);
+}
+
+.radialLeftTop {
+    background: repeating-radial-gradient(ellipse farthest-corner at 25% 70%, yellow 0 5%, green 5% 10%);
+}
+
+.radialRightBottom {
+    background: repeating-radial-gradient(ellipse farthest-corner at 75% 30%, black, blue 5%, red 5%, green 10%);
+}
+
+.multiRepeatingRadial {
+    background: repeating-radial-gradient(ellipse at 80% 80%, rgba(0, 0, 0, 0.5) 0 15px, rgba(255, 255, 255, 0.5) 15px 30px) bottom right no-repeat,
+                repeating-radial-gradient(ellipse at 25% 25%, rgba(0, 0, 0, 0.5) 0 10px, rgba(255, 255, 255, 0.5) 10px 20px) top left no-repeat yellow;
+    background-size: 200px 200px, 100px 100px, 200px 200px;
+}
+
+/* 扇形グラデーション */
+.conic {
+    background: conic-gradient(hsla(0, 100%, 50%, 0.5) 120deg, hsla(120, 100%, 50%, 0.5) 120deg 240deg, hsla(240, 100%, 50%, 0.5) 240deg);
+}
+
+/* 繰り返し扇形グラデーション */
+.repeatingConic {
+    background: repeating-conic-gradient(orange 0deg 10deg, darkblue 10deg 20deg);
+}
+
+.conicLeftTop {
+    background: repeating-conic-gradient(from 3deg at 5% 5%, hsl(74, 100%, 50%) 0deg 10deg, hsl(200, 100%, 60%) 5deg 20deg);
+}
+
+.conicRightBottom {
+    background: repeating-conic-gradient(from 3deg at 75% 75%, beige, blue 2deg 5deg, beige, red 15deg 18deg, beige 20deg);
+}
+
+.checkeredPattern {
+    background: conic-gradient(black 0.25turn, chocolate 0.25turn 0.5turn, black 0.5turn 0.75turn, chocolate 0.75turn) top left / 25% 25% repeat;
+}
