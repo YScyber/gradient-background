@@ -10,7 +10,7 @@ linear-gradient(角度の指定, 色の指定, 色の指定);
 ```
 - [繰り返し線形グラデーション: MDN Web Docs](https://developer.mozilla.org/ja/docs/Web/CSS/gradient/repeating-linear-gradient)
 ```css
-linear-gradient(角度の指定, 色の指定, 色の指定);
+repeating-linear-gradient(角度の指定, 色の指定, 色の指定);
 ```
 
 ### 放射グラデーションと繰り返し放射グラデーション
