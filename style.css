@@ -1,5 +1,5 @@
 @charset "UTF-8";
-section {
+.wrapper {
     display: flex;
     justify-content: space-around;
 }
