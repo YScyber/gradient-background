@@ -46,3 +46,4 @@
     background: repeating-conic-gradient(orange 0deg 10deg, darkblue 10deg 20deg);
 }
 ```
+[完成ページへ](https://yscyber.github.io/gradient-background/ "https://yscyber.github.io/gradient-background/")
