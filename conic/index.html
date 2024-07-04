@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>扇形グラデーション</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="script.js" type="text/javascript" defer></script>
+    <style class="editable"></style>
+    <style>
+        .box {
+            margin: 0 auto;
+            width: 200px;
+            height: 200px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section class="preview"></section>
+    <textarea class="playable playable-html" style="height: 50px;">
+<div class="box conic"></div>
+</textarea>
+    <textarea class="playable playable-css" style="height: 160px;">
+.conic {
+    background: conic-gradient(
+        hsla(0, 100%, 50%, 0.5) 120deg,
+        hsla(120, 100%, 50%, 0.5) 120deg 240deg,
+        hsla(240, 100%, 50%, 0.5) 240deg);
+}
+</textarea>
+    <div class="playable-buttons">
+        <input type="button" id="reset" value="リセット" />
+        <input type="button" id="repeatingConic" value="繰り返し扇形に変更" />
+        <input type="button" id="conicLeftTop" value="繰り返し扇形（左上）に変更" />
+        <input type="button" id="conicRightBottom" value="繰り返し扇形（右下）に変更" />
+        <input type="button" id="checkeredPattern" value="チェック柄に変更" />
+    </div>
+</body>
+</html>

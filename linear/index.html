@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>線形グラデーション</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="script.js" type="text/javascript" defer></script>
+    <style class="editable"></style>
+    <style>
+        .box {
+            margin: 0 auto;
+            width: 200px;
+            height: 200px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section class="preview"></section>
+    <textarea class="playable playable-html" style="height: 50px;">
+<div class="box linear"></div>
+</textarea>
+    <textarea class="playable playable-css" style="height: 160px;">
+.linear {
+    background: linear-gradient(
+        rgba(255, 0, 0, 0.8),
+        rgba(0, 255, 0, 0.8),
+        rgba(0, 0, 255, 0.8));
+}
+</textarea>
+    <div class="playable-buttons">
+        <input type="button" id="reset" value="リセット" />
+        <input type="button" id="repeatingLinear" value="繰り返し線形に変更" />
+        <input type="button" id="repeatingHorizontalLine" value="繰り返し線形（水平線）に変更" />
+        <input type="button" id="multiRepeatingLinear" value="繰り返し線形（複数）に変更" />
+        <input type="button" id="plaidGradient" value="チェック柄に変更" />
+    </div>
+</body>
+</html>
