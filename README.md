@@ -46,4 +46,8 @@
     background: repeating-conic-gradient(orange 0deg 10deg, darkblue 10deg 20deg);
 }
 ```
+
+このリポジトリでは、JavaScriptでDOM操作を行っています。画面最下部にあるボタンをクリックすると、コードが自動で入力され、最上部にあるsection要素にその結果が出力されます。また、すでにコードが入力されているtextarea要素を書き換えることができ、元に戻す際にはリセットボタンをクリックすると最初の画面に戻ります。
+
+
 [完成ページへ](https://yscyber.github.io/gradient-background/ "https://yscyber.github.io/gradient-background/")
