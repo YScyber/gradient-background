@@ -17,17 +17,14 @@ function fillCode() {
 }
 
 const htmlRepeatingConic = `<div class="box repeatingConic"></div>`;
-const htmlConicLeftTop = `<div class="box conicLeftTop"></div>`;
-const htmlConicRightBottom = `<div class="box conicRightBottom"></div>`;
-const htmlCheckeredPattern = `<div class="box checkeredPattern"></div>`;
-
-
 const cssRepeatingConic = `.repeatingConic {
     background: repeating-conic-gradient(
         orange 0deg 10deg,
         darkblue 10deg 20deg);
 }
 `;
+
+const htmlConicLeftTop = `<div class="box conicLeftTop"></div>`;
 const cssConicLeftTop = `.conicLeftTop {
     background: repeating-conic-gradient(
         from 3deg at 5% 5%,
@@ -36,6 +33,7 @@ const cssConicLeftTop = `.conicLeftTop {
 }
 `;
 
+const htmlConicRightBottom = `<div class="box conicRightBottom"></div>`;
 const cssConicRightBottom = `.conicRightBottom {
     background: repeating-conic-gradient(
         from 3deg at 75% 75%,
@@ -47,6 +45,7 @@ const cssConicRightBottom = `.conicRightBottom {
 }
 `;
 
+const htmlCheckeredPattern = `<div class="box checkeredPattern"></div>`;
 const cssCheckeredPattern = `.checkeredPattern {
     background: conic-gradient(
         black 0.25turn,
@@ -57,13 +56,15 @@ const cssCheckeredPattern = `.checkeredPattern {
 `;
 
 let htmlRepeatingConicEntry = htmlRepeatingConic;
-let htmlConicLeftTopEntry = htmlConicLeftTop;
-let htmlConicRightBottomEntry = htmlConicRightBottom;
-let htmlCheckeredPatternEntry = htmlCheckeredPattern;
-
 let cssRepeatingConicEntry = cssRepeatingConic;
+
+let htmlConicLeftTopEntry = htmlConicLeftTop;
 let cssConicLeftTopEntry = cssConicLeftTop;
+
+let htmlConicRightBottomEntry = htmlConicRightBottom;
 let cssConicRightBottomEntry = cssConicRightBottom;
+
+let htmlCheckeredPatternEntry = htmlCheckeredPattern;
 let cssCheckeredPatternEntry = cssCheckeredPattern;
 
 reset.addEventListener("click", () => {
