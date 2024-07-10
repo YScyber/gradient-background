@@ -16,16 +16,16 @@ function fillCode() {
     editable.innerHTML = textareaCSS.value;
 }
 
-const htmlRepeatingConic = `<div class="box repeatingConic"></div>`;
-const cssRepeatingConic = `.repeatingConic {
+const repeatingConicHtmlSolution = `<div class="box repeatingConic"></div>`;
+const repeatingConicCssSolution = `.repeatingConic {
     background: repeating-conic-gradient(
         orange 0deg 10deg,
         darkblue 10deg 20deg);
 }
 `;
 
-const htmlConicLeftTop = `<div class="box conicLeftTop"></div>`;
-const cssConicLeftTop = `.conicLeftTop {
+const conicLeftTopHtmlSolution = `<div class="box conicLeftTop"></div>`;
+const conicLeftTopCssSolution = `.conicLeftTop {
     background: repeating-conic-gradient(
         from 3deg at 5% 5%,
         hsl(74, 100%, 50%) 0deg 10deg,
@@ -33,8 +33,8 @@ const cssConicLeftTop = `.conicLeftTop {
 }
 `;
 
-const htmlConicRightBottom = `<div class="box conicRightBottom"></div>`;
-const cssConicRightBottom = `.conicRightBottom {
+const conicRightBottomHtmlSolution = `<div class="box conicRightBottom"></div>`;
+const conicRightBottomCssSolution = `.conicRightBottom {
     background: repeating-conic-gradient(
         from 3deg at 75% 75%,
         beige,
@@ -45,8 +45,8 @@ const cssConicRightBottom = `.conicRightBottom {
 }
 `;
 
-const htmlCheckeredPattern = `<div class="box checkeredPattern"></div>`;
-const cssCheckeredPattern = `.checkeredPattern {
+const checkeredPatternHtmlSolution = `<div class="box checkeredPattern"></div>`;
+const checkeredPatternCssSolution = `.checkeredPattern {
     background: conic-gradient(
         black 0.25turn,
         chocolate 0.25turn 0.5turn,
@@ -55,17 +55,17 @@ const cssCheckeredPattern = `.checkeredPattern {
 }
 `;
 
-let htmlRepeatingConicEntry = htmlRepeatingConic;
-let cssRepeatingConicEntry = cssRepeatingConic;
+let repeatingConicHtmlSolutionEntry = repeatingConicHtmlSolution;
+let repeatingConicCssSolutionEntry = repeatingConicCssSolution;
 
-let htmlConicLeftTopEntry = htmlConicLeftTop;
-let cssConicLeftTopEntry = cssConicLeftTop;
+let conicLeftTopHtmlSolutionEntry = conicLeftTopHtmlSolution;
+let conicLeftTopCssSolutionEntry = conicLeftTopCssSolution;
 
-let htmlConicRightBottomEntry = htmlConicRightBottom;
-let cssConicRightBottomEntry = cssConicRightBottom;
+let conicRightBottomHtmlSolutionEntry = conicRightBottomHtmlSolution;
+let conicRightBottomCssSolutionEntry = conicRightBottomCssSolution;
 
-let htmlCheckeredPatternEntry = htmlCheckeredPattern;
-let cssCheckeredPatternEntry = cssCheckeredPattern;
+let checkeredPatternHtmlSolutionEntry = checkeredPatternHtmlSolution;
+let checkeredPatternCssSolutionEntry = checkeredPatternCssSolution;
 
 reset.addEventListener("click", () => {
     textareaHTML.value = htmlCode;
@@ -79,8 +79,8 @@ reset.addEventListener("click", () => {
 
 repeatingConic.addEventListener("click", () => {
     if (repeatingConic.value === "繰り返し扇形に変更") {
-        textareaHTML.value = htmlRepeatingConicEntry;
-        textareaCSS.value = cssRepeatingConicEntry;
+        textareaHTML.value = repeatingConicHtmlSolutionEntry;
+        textareaCSS.value = repeatingConicCssSolutionEntry;
         repeatingConic.value = "元に戻す";
     } else {
         textareaHTML.value = htmlCode;
@@ -92,8 +92,8 @@ repeatingConic.addEventListener("click", () => {
 
 conicLeftTop.addEventListener("click", () => {
     if (conicLeftTop.value === "繰り返し扇形（左上）に変更") {
-        textareaHTML.value = htmlConicLeftTopEntry;
-        textareaCSS.value = cssConicLeftTopEntry;
+        textareaHTML.value = conicLeftTopHtmlSolutionEntry;
+        textareaCSS.value = conicLeftTopCssSolutionEntry;
         conicLeftTop.value = "元に戻す";
     } else {
         textareaHTML.value = htmlCode;
@@ -105,8 +105,8 @@ conicLeftTop.addEventListener("click", () => {
 
 conicRightBottom.addEventListener("click", () => {
     if (conicRightBottom.value === "繰り返し扇形（右下）に変更") {
-        textareaHTML.value = htmlConicRightBottomEntry;
-        textareaCSS.value = cssConicRightBottomEntry;
+        textareaHTML.value = conicRightBottomHtmlSolutionEntry;
+        textareaCSS.value = conicRightBottomCssSolutionEntry;
         conicRightBottom.value = "元に戻す";
     } else {
         textareaHTML.value = htmlCode;
@@ -118,8 +118,8 @@ conicRightBottom.addEventListener("click", () => {
 
 checkeredPattern.addEventListener("click", () => {
     if (checkeredPattern.value === "チェック柄に変更") {
-        textareaHTML.value = htmlCheckeredPatternEntry;
-        textareaCSS.value = cssCheckeredPatternEntry;
+        textareaHTML.value = checkeredPatternHtmlSolutionEntry;
+        textareaCSS.value = checkeredPatternCssSolutionEntry;
         checkeredPattern.value = "元に戻す";
     } else {
         textareaHTML.value = htmlCode;
