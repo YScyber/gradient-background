@@ -17,17 +17,14 @@ function fillCode() {
 }
 
 const htmlRepeatingRadial = `<div class="box repeatingRadial"></div>`;
-const htmlRadialLeftBottom = `<div class="box radialLeftBottom"></div>`;
-const htmlRadialRightTop = `<div class="box radialRightTop"></div>`;
-const htmlMultiRepeatingRadial = `<div class="box multiRepeatingRadial"></div>`;
-
-
 const cssRepeatingRadial = `.repeatingRadial {
     background: repeating-radial-gradient(
         rgb(0, 255, 255, 0.7) 0 20px,
         rgb(0, 255, 255, 0.4) 20px 40px);
 }
 `;
+
+const htmlRadialLeftBottom = `<div class="box radialLeftBottom"></div>`;
 const cssRadialLeftBottom = `.radialLeftBottom {
     background: repeating-radial-gradient(
         ellipse farthest-corner at 25% 70%,
@@ -36,6 +33,7 @@ const cssRadialLeftBottom = `.radialLeftBottom {
 }
 `;
 
+const htmlRadialRightTop = `<div class="box radialRightTop"></div>`;
 const cssRadialRightTop = `.radialRightTop {
     background: repeating-radial-gradient(
         ellipse farthest-corner at 75% 30%,
@@ -46,6 +44,7 @@ const cssRadialRightTop = `.radialRightTop {
 }
 `;
 
+const htmlMultiRepeatingRadial = `<div class="box multiRepeatingRadial"></div>`;
 const cssMultiRepeatingRadial = `.multiRepeatingRadial {
     background: repeating-radial-gradient(
                     ellipse at 80% 80%,
@@ -60,13 +59,15 @@ const cssMultiRepeatingRadial = `.multiRepeatingRadial {
 `;
 
 let htmlRepeatingRadialEntry = htmlRepeatingRadial;
-let htmlRadialLeftBottomEntry = htmlRadialLeftBottom;
-let htmlRadialRightTopEntry = htmlRadialRightTop;
-let htmlMultiRepeatingRadialEntry = htmlMultiRepeatingRadial;
-
 let cssRepeatingRadialEntry = cssRepeatingRadial;
+
+let htmlRadialLeftBottomEntry = htmlRadialLeftBottom;
 let cssRadialLeftBottomEntry = cssRadialLeftBottom;
+
+let htmlRadialRightTopEntry = htmlRadialRightTop;
 let cssRadialRightTopEntry = cssRadialRightTop;
+
+let htmlMultiRepeatingRadialEntry = htmlMultiRepeatingRadial;
 let cssMultiRepeatingRadialEntry = cssMultiRepeatingRadial;
 
 reset.addEventListener("click", () => {
