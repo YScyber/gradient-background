@@ -17,11 +17,6 @@ function fillCode() {
 }
 
 const htmlRepeatingLinear = `<div class="box repeatingLinear"></div>`;
-const htmlRepeatingHorizontalLine = `<div class="box repeatingHorizontalLine"></div>`;
-const htmlMultiRepeatingLinear = `<div class="box multiRepeatingLinear"></div>`;
-const htmlPlaidGradient = `<div class="box plaidGradient"></div>`;
-
-
 const cssRepeatingLinear = `.repeatingLinear {
     background: repeating-linear-gradient(
         -45deg,
@@ -29,6 +24,8 @@ const cssRepeatingLinear = `.repeatingLinear {
         yellow 5px 10px);
 }
 `;
+
+const htmlRepeatingHorizontalLine = `<div class="box repeatingHorizontalLine"></div>`;
 const cssRepeatingHorizontalLine = `.repeatingHorizontalLine {
     background: repeating-linear-gradient(
         to top,
@@ -37,6 +34,7 @@ const cssRepeatingHorizontalLine = `.repeatingHorizontalLine {
 }
 `;
 
+const htmlMultiRepeatingLinear = `<div class="box multiRepeatingLinear"></div>`;
 const cssMultiRepeatingLinear = `.multiRepeatingLinear {
     background: repeating-linear-gradient(
                     190deg,
@@ -71,6 +69,7 @@ const cssMultiRepeatingLinear = `.multiRepeatingLinear {
 }
 `;
 
+const htmlPlaidGradient = `<div class="box plaidGradient"></div>`;
 const cssPlaidGradient = `.plaidGradient {
     background: repeating-linear-gradient(
                     90deg,
@@ -100,13 +99,15 @@ const cssPlaidGradient = `.plaidGradient {
 `;
 
 let htmlRepeatingLinearEntry = htmlRepeatingLinear;
-let htmlRepeatingHorizontalLineEntry = htmlRepeatingHorizontalLine;
-let htmlMultiRepeatingLinearEntry = htmlMultiRepeatingLinear;
-let htmlPlaidGradientEntry = htmlPlaidGradient;
-
 let cssRepeatingLinearEntry = cssRepeatingLinear;
+
+let htmlRepeatingHorizontalLineEntry = htmlRepeatingHorizontalLine;
 let cssRepeatingHorizontalLineEntry = cssRepeatingHorizontalLine;
+
+let htmlMultiRepeatingLinearEntry = htmlMultiRepeatingLinear;
 let cssMultiRepeatingLinearEntry = cssMultiRepeatingLinear;
+
+let htmlPlaidGradientEntry = htmlPlaidGradient;
 let cssPlaidGradientEntry = cssPlaidGradient;
 
 reset.addEventListener("click", () => {
