@@ -16,8 +16,8 @@ function fillCode() {
     editable.innerHTML = textareaCSS.value;
 }
 
-const htmlRepeatingLinear = `<div class="box repeatingLinear"></div>`;
-const cssRepeatingLinear = `.repeatingLinear {
+const repeatingLinearHtmlSolution = `<div class="box repeatingLinear"></div>`;
+const repeatingLinearCssSolution = `.repeatingLinear {
     background: repeating-linear-gradient(
         -45deg,
         brown 0 5px,
@@ -25,8 +25,8 @@ const cssRepeatingLinear = `.repeatingLinear {
 }
 `;
 
-const htmlRepeatingHorizontalLine = `<div class="box repeatingHorizontalLine"></div>`;
-const cssRepeatingHorizontalLine = `.repeatingHorizontalLine {
+const repeatingHorizontalLineHtmlSolution = `<div class="box repeatingHorizontalLine"></div>`;
+const repeatingHorizontalLineCssSolution = `.repeatingHorizontalLine {
     background: repeating-linear-gradient(
         to top,
         rgb(30, 236, 240) 0% 8%,
@@ -34,8 +34,8 @@ const cssRepeatingHorizontalLine = `.repeatingHorizontalLine {
 }
 `;
 
-const htmlMultiRepeatingLinear = `<div class="box multiRepeatingLinear"></div>`;
-const cssMultiRepeatingLinear = `.multiRepeatingLinear {
+const multiRepeatingLinearHtmlSolution = `<div class="box multiRepeatingLinear"></div>`;
+const multiRepeatingLinearCssSolution = `.multiRepeatingLinear {
     background: repeating-linear-gradient(
                     190deg,
                     rgba(255, 0, 0, 0.5) 10px,
@@ -69,8 +69,8 @@ const cssMultiRepeatingLinear = `.multiRepeatingLinear {
 }
 `;
 
-const htmlPlaidGradient = `<div class="box plaidGradient"></div>`;
-const cssPlaidGradient = `.plaidGradient {
+const plaidGradientHtmlSolution = `<div class="box plaidGradient"></div>`;
+const plaidGradientCssSolution = `.plaidGradient {
     background: repeating-linear-gradient(
                     90deg,
                     transparent 0 15px,
@@ -98,17 +98,17 @@ const cssPlaidGradient = `.plaidGradient {
 }
 `;
 
-let htmlRepeatingLinearEntry = htmlRepeatingLinear;
-let cssRepeatingLinearEntry = cssRepeatingLinear;
+let repeatingLinearHtmlSolutionEntry = repeatingLinearHtmlSolution;
+let repeatingLinearCssSolutionEntry = repeatingLinearCssSolution;
 
-let htmlRepeatingHorizontalLineEntry = htmlRepeatingHorizontalLine;
-let cssRepeatingHorizontalLineEntry = cssRepeatingHorizontalLine;
+let repeatingHorizontalLineHtmlSolutionEntry = repeatingHorizontalLineHtmlSolution;
+let repeatingHorizontalLineCssSolutionEntry = repeatingHorizontalLineCssSolution;
 
-let htmlMultiRepeatingLinearEntry = htmlMultiRepeatingLinear;
-let cssMultiRepeatingLinearEntry = cssMultiRepeatingLinear;
+let multiRepeatingLinearHtmlSolutionEntry = multiRepeatingLinearHtmlSolution;
+let multiRepeatingLinearCssSolutionEntry = multiRepeatingLinearCssSolution;
 
-let htmlPlaidGradientEntry = htmlPlaidGradient;
-let cssPlaidGradientEntry = cssPlaidGradient;
+let plaidGradientHtmlSolutionEntry = plaidGradientHtmlSolution;
+let plaidGradientCssSolutionEntry = plaidGradientCssSolution;
 
 reset.addEventListener("click", () => {
     textareaHTML.value = htmlCode;
@@ -122,8 +122,8 @@ reset.addEventListener("click", () => {
 
 repeatingLinear.addEventListener("click", () => {
     if (repeatingLinear.value === "繰り返し線形に変更") {
-        textareaHTML.value = htmlRepeatingLinearEntry;
-        textareaCSS.value = cssRepeatingLinearEntry;
+        textareaHTML.value = repeatingLinearHtmlSolutionEntry;
+        textareaCSS.value = repeatingLinearCssSolutionEntry;
         repeatingLinear.value = "元に戻す";
     } else {
         textareaHTML.value = htmlCode;
@@ -135,8 +135,8 @@ repeatingLinear.addEventListener("click", () => {
 
 repeatingHorizontalLine.addEventListener("click", () => {
     if (repeatingHorizontalLine.value === "繰り返し線形（水平線）に変更") {
-        textareaHTML.value = htmlRepeatingHorizontalLineEntry;
-        textareaCSS.value = cssRepeatingHorizontalLineEntry;
+        textareaHTML.value = repeatingHorizontalLineHtmlSolutionEntry;
+        textareaCSS.value = repeatingHorizontalLineCssSolutionEntry;
         repeatingHorizontalLine.value = "元に戻す";
     } else {
         textareaHTML.value = htmlCode;
@@ -148,8 +148,8 @@ repeatingHorizontalLine.addEventListener("click", () => {
 
 multiRepeatingLinear.addEventListener("click", () => {
     if (multiRepeatingLinear.value === "繰り返し線形（複数）に変更") {
-        textareaHTML.value = htmlMultiRepeatingLinearEntry;
-        textareaCSS.value = cssMultiRepeatingLinearEntry;
+        textareaHTML.value = multiRepeatingLinearHtmlSolutionEntry;
+        textareaCSS.value = multiRepeatingLinearCssSolutionEntry;
         multiRepeatingLinear.value = "元に戻す";
     } else {
         textareaHTML.value = htmlCode;
@@ -161,8 +161,8 @@ multiRepeatingLinear.addEventListener("click", () => {
 
 plaidGradient.addEventListener("click", () => {
     if (plaidGradient.value === "チェック柄に変更") {
-        textareaHTML.value = htmlPlaidGradientEntry;
-        textareaCSS.value = cssPlaidGradientEntry;
+        textareaHTML.value = plaidGradientHtmlSolutionEntry;
+        textareaCSS.value = plaidGradientCssSolutionEntry;
         plaidGradient.value = "元に戻す";
     } else {
         textareaHTML.value = htmlCode;
