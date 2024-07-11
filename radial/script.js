@@ -21,8 +21,7 @@ const repeatingRadialCssSolution = `.repeatingRadial {
     background: repeating-radial-gradient(
         rgb(0, 255, 255, 0.7) 0 20px,
         rgb(0, 255, 255, 0.4) 20px 40px);
-}
-`;
+}`;
 
 const radialLeftBottomHtmlSolution = `<div class="box radialLeftBottom"></div>`;
 const radialLeftBottomCssSolution = `.radialLeftBottom {
@@ -30,8 +29,7 @@ const radialLeftBottomCssSolution = `.radialLeftBottom {
         ellipse farthest-corner at 25% 70%,
         yellow 0 5%,
         green 5% 10%);
-}
-`;
+}`;
 
 const radialRightTopHtmlSolution = `<div class="box radialRightTop"></div>`;
 const radialRightTopCssSolution = `.radialRightTop {
@@ -41,8 +39,7 @@ const radialRightTopCssSolution = `.radialRightTop {
         blue 5%,
         red 5%,
         green 10%);
-}
-`;
+}`;
 
 const multiRepeatingRadialHtmlSolution = `<div class="box multiRepeatingRadial"></div>`;
 const multiRepeatingRadialCssSolution = `.multiRepeatingRadial {
@@ -55,8 +52,7 @@ const multiRepeatingRadialCssSolution = `.multiRepeatingRadial {
                     rgba(0, 0, 0, 0.5) 0 10px,
                     rgba(255, 255, 255, 0.5) 10px 20px) top left no-repeat yellow;
     background-size: 200px 200px, 100px 100px, 200px 200px;
-}
-`;
+}`;
 
 let repeatingRadialHtmlSolutionEntry = repeatingRadialHtmlSolution;
 let repeatingRadialCssSolutionEntry = repeatingRadialCssSolution;
