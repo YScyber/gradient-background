@@ -66,7 +66,7 @@ const multiCssSolution = `.multi {
                     red 80px);
 }`;
 
-const plaidtHtmlSolution = `<div class="box plaid"></div>`;
+const plaidHtmlSolution = `<div class="box plaid"></div>`;
 const plaidCssSolution = `.plaid {
     background: repeating-linear-gradient(
                     90deg,
