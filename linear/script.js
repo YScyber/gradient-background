@@ -6,7 +6,7 @@ const reset = document.getElementById("reset");
 const repeat = document.getElementById("repeat");
 const horizon = document.getElementById("horizon");
 const multi = document.getElementById("multi");
-const check = document.getElementById("check");
+const plaid = document.getElementById("plaid");
 
 let htmlCode = textareaHTML.value;
 let cssCode = textareaCSS.value;
@@ -66,8 +66,8 @@ const multiCssSolution = `.multi {
                     red 80px);
 }`;
 
-const checktHtmlSolution = `<div class="box check"></div>`;
-const checkCssSolution = `.check {
+const plaidtHtmlSolution = `<div class="box plaid"></div>`;
+const plaidCssSolution = `.plaid {
     background: repeating-linear-gradient(
                     90deg,
                     transparent 0 15px,
@@ -103,8 +103,8 @@ let horizonCssSolutionEntry = horizonCssSolution;
 let multiHtmlSolutionEntry = multiHtmlSolution;
 let multiCssSolutionEntry = multiCssSolution;
 
-let checkHtmlSolutionEntry = checkHtmlSolution;
-let checkCssSolutionEntry = checkCssSolution;
+let plaidHtmlSolutionEntry = plaidHtmlSolution;
+let plaidCssSolutionEntry = plaidCssSolution;
 
 reset.addEventListener("click", () => {
     textareaHTML.value = htmlCode;
@@ -112,7 +112,7 @@ reset.addEventListener("click", () => {
     repeat.value = "繰り返し線形に変更";
     horizon.value = "繰り返し線形（水平線）に変更";
     multi.value = "繰り返し線形（複数）に変更";
-    check.value = "チェック柄に変更";
+    plaid.value = "チェック柄に変更";
     fillCode();
 });
 
@@ -155,15 +155,15 @@ multi.addEventListener("click", () => {
     fillCode();
 });
 
-check.addEventListener("click", () => {
-    if (check.value === "チェック柄に変更") {
-        textareaHTML.value = checkHtmlSolutionEntry;
-        textareaCSS.value = checkCssSolutionEntry;
-        plaidGradient.value = "元に戻す";
+plaid.addEventListener("click", () => {
+    if (plaid.value === "チェック柄に変更") {
+        textareaHTML.value = plaidHtmlSolutionEntry;
+        textareaCSS.value = plaidCssSolutionEntry;
+        plaid.value = "元に戻す";
     } else {
         textareaHTML.value = htmlCode;
         textareaCSS.value = cssCode;
-        check.value = "チェック柄に変更";
+        plaid.value = "チェック柄に変更";
     }
     fillCode();
 });
