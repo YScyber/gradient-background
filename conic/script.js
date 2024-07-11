@@ -116,7 +116,7 @@ ichimatsu.addEventListener("click", () => {
     if (ichimatsu.value === "市松模様に変更") {
         textareaHTML.value = ichimatsuHtmlSolutionEntry;
         textareaCSS.value = ichimatsuCssSolutionEntry;
-        check.value = "元に戻す";
+        ichimatsu.value = "元に戻す";
     } else {
         textareaHTML.value = htmlCode;
         textareaCSS.value = cssCode;
