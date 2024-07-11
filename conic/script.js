@@ -21,8 +21,7 @@ const repeatingConicCssSolution = `.repeatingConic {
     background: repeating-conic-gradient(
         orange 0deg 10deg,
         darkblue 10deg 20deg);
-}
-`;
+}`;
 
 const conicLeftTopHtmlSolution = `<div class="box conicLeftTop"></div>`;
 const conicLeftTopCssSolution = `.conicLeftTop {
@@ -30,8 +29,7 @@ const conicLeftTopCssSolution = `.conicLeftTop {
         from 3deg at 5% 5%,
         hsl(74, 100%, 50%) 0deg 10deg,
         hsl(200, 100%, 60%) 5deg 20deg);
-}
-`;
+}`;
 
 const conicRightBottomHtmlSolution = `<div class="box conicRightBottom"></div>`;
 const conicRightBottomCssSolution = `.conicRightBottom {
@@ -42,8 +40,7 @@ const conicRightBottomCssSolution = `.conicRightBottom {
         beige,
         red 15deg 18deg,
         beige 20deg);
-}
-`;
+}`;
 
 const checkeredPatternHtmlSolution = `<div class="box checkeredPattern"></div>`;
 const checkeredPatternCssSolution = `.checkeredPattern {
@@ -52,8 +49,7 @@ const checkeredPatternCssSolution = `.checkeredPattern {
         chocolate 0.25turn 0.5turn,
         black 0.5turn 0.75turn,
         chocolate 0.75turn) top left / 25% 25% repeat;
-}
-`;
+}`;
 
 let repeatingConicHtmlSolutionEntry = repeatingConicHtmlSolution;
 let repeatingConicCssSolutionEntry = repeatingConicCssSolution;
