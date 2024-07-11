@@ -3,10 +3,10 @@ const editable = document.querySelector(".editable");
 const textareaHTML = document.querySelector(".playable-html");
 const textareaCSS = document.querySelector(".playable-css");
 const reset = document.getElementById("reset");
-const repeatingRadial = document.getElementById("repeatingRadial");
-const radialLeftBottom = document.getElementById("radialLeftBottom");
-const radialRightTop = document.getElementById("radialRightTop");
-const multiRepeatingRadial = document.getElementById("multiRepeatingRadial");
+const repeat = document.getElementById("repeat");
+const leftBottom = document.getElementById("leftBottom");
+const rightTop = document.getElementById("rightTop");
+const multi = document.getElementById("multi");
 
 let htmlCode = textareaHTML.value;
 let cssCode = textareaCSS.value;
@@ -16,23 +16,23 @@ function fillCode() {
     editable.innerHTML = textareaCSS.value;
 }
 
-const repeatingRadialHtmlSolution = `<div class="box repeatingRadial"></div>`;
-const repeatingRadialCssSolution = `.repeatingRadial {
+const repeatHtmlSolution = `<div class="box repeat"></div>`;
+const repeatCssSolution = `.repeat {
     background: repeating-radial-gradient(
         rgb(0, 255, 255, 0.7) 0 20px,
         rgb(0, 255, 255, 0.4) 20px 40px);
 }`;
 
-const radialLeftBottomHtmlSolution = `<div class="box radialLeftBottom"></div>`;
-const radialLeftBottomCssSolution = `.radialLeftBottom {
+const leftBottomHtmlSolution = `<div class="box leftBottom"></div>`;
+const leftBottomCssSolution = `.leftBottom {
     background: repeating-radial-gradient(
         ellipse farthest-corner at 25% 70%,
         yellow 0 5%,
         green 5% 10%);
 }`;
 
-const radialRightTopHtmlSolution = `<div class="box radialRightTop"></div>`;
-const radialRightTopCssSolution = `.radialRightTop {
+const rightTopHtmlSolution = `<div class="box rightTop"></div>`;
+const rightTopCssSolution = `.rightTop {
     background: repeating-radial-gradient(
         ellipse farthest-corner at 75% 30%,
         black,
@@ -41,8 +41,8 @@ const radialRightTopCssSolution = `.radialRightTop {
         green 10%);
 }`;
 
-const multiRepeatingRadialHtmlSolution = `<div class="box multiRepeatingRadial"></div>`;
-const multiRepeatingRadialCssSolution = `.multiRepeatingRadial {
+const multiHtmlSolution = `<div class="box multi"></div>`;
+const multiCssSolution = `.multi {
     background: repeating-radial-gradient(
                     ellipse at 80% 80%,
                     rgba(0, 0, 0, 0.5) 0 15px,
@@ -54,76 +54,76 @@ const multiRepeatingRadialCssSolution = `.multiRepeatingRadial {
     background-size: 200px 200px, 100px 100px, 200px 200px;
 }`;
 
-let repeatingRadialHtmlSolutionEntry = repeatingRadialHtmlSolution;
-let repeatingRadialCssSolutionEntry = repeatingRadialCssSolution;
+let repeatHtmlSolutionEntry = repeatHtmlSolution;
+let repeatCssSolutionEntry = repeatCssSolution;
 
-let radialLeftBottomHtmlSolutionEntry = radialLeftBottomHtmlSolution;
-let radialLeftBottomCssSolutionEntry = radialLeftBottomCssSolution;
+let leftBottomHtmlSolutionEntry = leftBottomHtmlSolution;
+let leftBottomCssSolutionEntry = leftBottomCssSolution;
 
-let radialRightTopHtmlSolutionEntry = radialRightTopHtmlSolution;
-let radialRightTopCssSolutionEntry = radialRightTopCssSolution;
+let rightTopHtmlSolutionEntry = rightTopHtmlSolution;
+let rightTopCssSolutionEntry = rightTopCssSolution;
 
-let multiRepeatingRadialHtmlSolutionEntry = multiRepeatingRadialHtmlSolution;
-let multiRepeatingRadialCssSolutionEntry = multiRepeatingRadialCssSolution;
+let multiHtmlSolutionEntry = multiHtmlSolution;
+let multiCssSolutionEntry = multiCssSolution;
 
 reset.addEventListener("click", () => {
     textareaHTML.value = htmlCode;
     textareaCSS.value = cssCode;
-    repeatingRadial.value = "繰り返し放射に変更";
-    radialLeftBottom.value = "繰り返し放射（左下）に変更";
-    radialRightTop.value = "繰り返し放射（右上）に変更";
-    multiRepeatingRadial.value = "繰り返し放射（複数）に変更";
+    repeat.value = "繰り返し放射に変更";
+    leftBottom.value = "繰り返し放射（左下）に変更";
+    rightTop.value = "繰り返し放射（右上）に変更";
+    multi.value = "繰り返し放射（複数）に変更";
     fillCode();
 });
 
-repeatingRadial.addEventListener("click", () => {
-    if (repeatingRadial.value === "繰り返し放射に変更") {
-        textareaHTML.value = repeatingRadialHtmlSolutionEntry;
-        textareaCSS.value = repeatingRadialCssSolutionEntry;
-        repeatingRadial.value = "元に戻す";
+repeat.addEventListener("click", () => {
+    if (repeat.value === "繰り返し放射に変更") {
+        textareaHTML.value = repeatHtmlSolutionEntry;
+        textareaCSS.value = repeatCssSolutionEntry;
+        repeat.value = "元に戻す";
     } else {
         textareaHTML.value = htmlCode;
         textareaCSS.value = cssCode;
-        repeatingRadial.value = "繰り返し放射に変更";
+        repeat.value = "繰り返し放射に変更";
     }
     fillCode();
 });
 
-radialLeftBottom.addEventListener("click", () => {
-    if (radialLeftBottom.value === "繰り返し放射（左下）に変更") {
-        textareaHTML.value = radialLeftBottomHtmlSolutionEntry;
-        textareaCSS.value = radialLeftBottomCssSolutionEntry;
-        radialLeftBottom.value = "元に戻す";
+leftBottom.addEventListener("click", () => {
+    if (leftBottom.value === "繰り返し放射（左下）に変更") {
+        textareaHTML.value = leftBottomHtmlSolutionEntry;
+        textareaCSS.value = leftBottomCssSolutionEntry;
+        leftBottom.value = "元に戻す";
     } else {
         textareaHTML.value = htmlCode;
         textareaCSS.value = cssCode;
-        radialLeftBottom.value = "繰り返し放射（左下）に変更";
+        leftBottom.value = "繰り返し放射（左下）に変更";
     }
     fillCode();
 });
 
-radialRightTop.addEventListener("click", () => {
-    if (radialRightTop.value === "繰り返し放射（右上）に変更") {
-        textareaHTML.value = radialRightTopHtmlSolutionEntry;
-        textareaCSS.value = radialRightTopCssSolutionEntry;
-        radialRightTop.value = "元に戻す";
+rightTop.addEventListener("click", () => {
+    if (rightTop.value === "繰り返し放射（右上）に変更") {
+        textareaHTML.value = rightTopHtmlSolutionEntry;
+        textareaCSS.value = rightTopCssSolutionEntry;
+        rightTop.value = "元に戻す";
     } else {
         textareaHTML.value = htmlCode;
         textareaCSS.value = cssCode;
-        radialRightTop.value = "繰り返し放射（右上）に変更";
+        rightTop.value = "繰り返し放射（右上）に変更";
     }
     fillCode();
 });
 
-multiRepeatingRadial.addEventListener("click", () => {
-    if (multiRepeatingRadial.value === "繰り返し放射（複数）に変更") {
-        textareaHTML.value = multiRepeatingRadialHtmlSolutionEntry;
-        textareaCSS.value = multiRepeatingRadialCssSolutionEntry;
-        multiRepeatingRadial.value = "元に戻す";
+multi.addEventListener("click", () => {
+    if (multi.value === "繰り返し放射（複数）に変更") {
+        textareaHTML.value = multiHtmlSolutionEntry;
+        textareaCSS.value = multiCssSolutionEntry;
+        multi.value = "元に戻す";
     } else {
         textareaHTML.value = htmlCode;
         textareaCSS.value = cssCode;
-        multiRepeatingRadial.value = "繰り返し放射（複数）に変更";
+        multi.value = "繰り返し放射（複数）に変更";
     }
     fillCode();
 });
