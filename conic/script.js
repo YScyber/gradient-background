@@ -6,7 +6,7 @@ const reset = document.getElementById("reset");
 const repeat = document.getElementById("repeat");
 const leftTop = document.getElementById("leftTop");
 const rightBottom = document.getElementById("rightBottom");
-const check = document.getElementById("check");
+const ichimatsu = document.getElementById("ichimatsu");
 
 let htmlCode = textareaHTML.value;
 let cssCode = textareaCSS.value;
@@ -42,8 +42,8 @@ const rightBottomCssSolution = `.rightBottom {
         beige 20deg);
 }`;
 
-const checkHtmlSolution = `<div class="box check"></div>`;
-const checkCssSolution = `.check {
+const ichimatsuHtmlSolution = `<div class="box ichimatsu"></div>`;
+const ichimatsuCssSolution = `.ichimatsu {
     background: conic-gradient(
         black 0.25turn,
         chocolate 0.25turn 0.5turn,
@@ -60,8 +60,8 @@ let leftTopCssSolutionEntry = leftTopCssSolution;
 let rightBottomHtmlSolutionEntry = rightBottomHtmlSolution;
 let rightBottomCssSolutionEntry = rightBottomCssSolution;
 
-let checkHtmlSolutionEntry = checkHtmlSolution;
-let checkCssSolutionEntry = checkCssSolution;
+let ichimatsuHtmlSolutionEntry = ichimatsuHtmlSolution;
+let ichimatsuCssSolutionEntry = ichimatsuCssSolution;
 
 reset.addEventListener("click", () => {
     textareaHTML.value = htmlCode;
@@ -69,7 +69,7 @@ reset.addEventListener("click", () => {
     repeat.value = "繰り返し扇形に変更";
     leftTop.value = "繰り返し扇形（左上）に変更";
     rightBottom.value = "繰り返し扇形（右下）に変更";
-    check.value = "チェック柄に変更";
+    ichimatsu.value = "市松模様に変更";
     fillCode();
 });
 
@@ -112,15 +112,15 @@ rightBottom.addEventListener("click", () => {
     fillCode();
 });
 
-check.addEventListener("click", () => {
-    if (check.value === "チェック柄に変更") {
-        textareaHTML.value = checkHtmlSolutionEntry;
-        textareaCSS.value = checkCssSolutionEntry;
+ichimatsu.addEventListener("click", () => {
+    if (ichimatsu.value === "市松模様に変更") {
+        textareaHTML.value = ichimatsuHtmlSolutionEntry;
+        textareaCSS.value = ichimatsuCssSolutionEntry;
         check.value = "元に戻す";
     } else {
         textareaHTML.value = htmlCode;
         textareaCSS.value = cssCode;
-        check.value = "チェック柄に変更";
+        ichimatsu.value = "市松模様に変更";
     }
     fillCode();
 });
