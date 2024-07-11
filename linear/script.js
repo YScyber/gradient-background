@@ -4,7 +4,7 @@ const textareaHTML = document.querySelector(".playable-html");
 const textareaCSS = document.querySelector(".playable-css");
 const reset = document.getElementById("reset");
 const repeat = document.getElementById("repeat");
-const horizontalLine = document.getElementById("horizontalLine");
+const horizon = document.getElementById("horizon");
 const multi = document.getElementById("multi");
 const check = document.getElementById("check");
 
@@ -24,8 +24,8 @@ const repeatCssSolution = `.repeat {
         yellow 5px 10px);
 }`;
 
-const horizontalLineHtmlSolution = `<div class="box horizontalLine"></div>`;
-const horizontalLineCssSolution = `.horizontalLine {
+const horizonHtmlSolution = `<div class="box horizon"></div>`;
+const horizonCssSolution = `.horizon {
     background: repeating-linear-gradient(
         to top,
         rgb(30, 236, 240) 0% 8%,
@@ -97,8 +97,8 @@ const checkCssSolution = `.check {
 let repeatHtmlSolutionEntry = repeatHtmlSolution;
 let repeatCssSolutionEntry = repeatCssSolution;
 
-let horizontalLineHtmlSolutionEntry = horizontalLineHtmlSolution;
-let horizontalLineCssSolutionEntry = horizontalLineCssSolution;
+let horizonHtmlSolutionEntry = horizonHtmlSolution;
+let horizonCssSolutionEntry = horizonCssSolution;
 
 let multiHtmlSolutionEntry = multiHtmlSolution;
 let multiCssSolutionEntry = multiCssSolution;
@@ -110,7 +110,7 @@ reset.addEventListener("click", () => {
     textareaHTML.value = htmlCode;
     textareaCSS.value = cssCode;
     repeat.value = "繰り返し線形に変更";
-    horizontalLine.value = "繰り返し線形（水平線）に変更";
+    horizon.value = "繰り返し線形（水平線）に変更";
     multi.value = "繰り返し線形（複数）に変更";
     check.value = "チェック柄に変更";
     fillCode();
@@ -129,15 +129,15 @@ repeat.addEventListener("click", () => {
     fillCode();
 });
 
-horizontalLine.addEventListener("click", () => {
-    if (horizontalLine.value === "繰り返し線形（水平線）に変更") {
-        textareaHTML.value = horizontalLineHtmlSolutionEntry;
-        textareaCSS.value = horizontalLineCssSolutionEntry;
-        horizontalLine.value = "元に戻す";
+horizon.addEventListener("click", () => {
+    if (horizon.value === "繰り返し線形（水平線）に変更") {
+        textareaHTML.value = horizonHtmlSolutionEntry;
+        textareaCSS.value = horizonCssSolutionEntry;
+        horizon.value = "元に戻す";
     } else {
         textareaHTML.value = htmlCode;
         textareaCSS.value = cssCode;
-        horizontalLine.value = "繰り返し線形（水平線）に変更";
+        horizon.value = "繰り返し線形（水平線）に変更";
     }
     fillCode();
 });
