@@ -16,7 +16,7 @@ function fillCode() {
     editable.innerHTML = textareaCSS.value;
 }
 
-const repeattmlSolution = `<div class="box repeat"></div>`;
+const repeatHtmlSolution = `<div class="box repeat"></div>`;
 const repeatCssSolution = `.repeat {
     background: repeating-conic-gradient(
         orange 0deg 10deg,
