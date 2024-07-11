@@ -3,10 +3,10 @@ const editable = document.querySelector(".editable");
 const textareaHTML = document.querySelector(".playable-html");
 const textareaCSS = document.querySelector(".playable-css");
 const reset = document.getElementById("reset");
-const repeatingLinear = document.getElementById("repeatingLinear");
-const repeatingHorizontalLine = document.getElementById("repeatingHorizontalLine");
-const multiRepeatingLinear = document.getElementById("multiRepeatingLinear");
-const plaidGradient = document.getElementById("plaidGradient");
+const repeat = document.getElementById("repeat");
+const horizontalLine = document.getElementById("horizontalLine");
+const multi = document.getElementById("multi");
+const check = document.getElementById("check");
 
 let htmlCode = textareaHTML.value;
 let cssCode = textareaCSS.value;
@@ -16,24 +16,24 @@ function fillCode() {
     editable.innerHTML = textareaCSS.value;
 }
 
-const repeatingLinearHtmlSolution = `<div class="box repeatingLinear"></div>`;
-const repeatingLinearCssSolution = `.repeatingLinear {
+const repeatHtmlSolution = `<div class="box repeat"></div>`;
+const repeatCssSolution = `.repeat {
     background: repeating-linear-gradient(
         -45deg,
         brown 0 5px,
         yellow 5px 10px);
 }`;
 
-const repeatingHorizontalLineHtmlSolution = `<div class="box repeatingHorizontalLine"></div>`;
-const repeatingHorizontalLineCssSolution = `.repeatingHorizontalLine {
+const horizontalLineHtmlSolution = `<div class="box horizontalLine"></div>`;
+const horizontalLineCssSolution = `.horizontalLine {
     background: repeating-linear-gradient(
         to top,
         rgb(30, 236, 240) 0% 8%,
         rgb(71, 6, 67) 20%);
 }`;
 
-const multiRepeatingLinearHtmlSolution = `<div class="box multiRepeatingLinear"></div>`;
-const multiRepeatingLinearCssSolution = `.multiRepeatingLinear {
+const multiHtmlSolution = `<div class="box multi"></div>`;
+const multiCssSolution = `.multi {
     background: repeating-linear-gradient(
                     190deg,
                     rgba(255, 0, 0, 0.5) 10px,
@@ -66,8 +66,8 @@ const multiRepeatingLinearCssSolution = `.multiRepeatingLinear {
                     red 80px);
 }`;
 
-const plaidGradientHtmlSolution = `<div class="box plaidGradient"></div>`;
-const plaidGradientCssSolution = `.plaidGradient {
+const checktHtmlSolution = `<div class="box check"></div>`;
+const checkCssSolution = `.check {
     background: repeating-linear-gradient(
                     90deg,
                     transparent 0 15px,
@@ -94,76 +94,76 @@ const plaidGradientCssSolution = `.plaidGradient {
                     rgba(113, 117, 36, 0.25) 5px 20px);
 }`;
 
-let repeatingLinearHtmlSolutionEntry = repeatingLinearHtmlSolution;
-let repeatingLinearCssSolutionEntry = repeatingLinearCssSolution;
+let repeatHtmlSolutionEntry = repeatHtmlSolution;
+let repeatCssSolutionEntry = repeatCssSolution;
 
-let repeatingHorizontalLineHtmlSolutionEntry = repeatingHorizontalLineHtmlSolution;
-let repeatingHorizontalLineCssSolutionEntry = repeatingHorizontalLineCssSolution;
+let horizontalLineHtmlSolutionEntry = horizontalLineHtmlSolution;
+let horizontalLineCssSolutionEntry = horizontalLineCssSolution;
 
-let multiRepeatingLinearHtmlSolutionEntry = multiRepeatingLinearHtmlSolution;
-let multiRepeatingLinearCssSolutionEntry = multiRepeatingLinearCssSolution;
+let multiHtmlSolutionEntry = multiHtmlSolution;
+let multiCssSolutionEntry = multiCssSolution;
 
-let plaidGradientHtmlSolutionEntry = plaidGradientHtmlSolution;
-let plaidGradientCssSolutionEntry = plaidGradientCssSolution;
+let checkHtmlSolutionEntry = checkHtmlSolution;
+let checkCssSolutionEntry = checkCssSolution;
 
 reset.addEventListener("click", () => {
     textareaHTML.value = htmlCode;
     textareaCSS.value = cssCode;
-    repeatingLinear.value = "繰り返し線形に変更";
-    repeatingHorizontalLine.value = "繰り返し線形（水平線）に変更";
-    multiRepeatingLinear.value = "繰り返し線形（複数）に変更";
-    plaidGradient.value = "チェック柄に変更";
+    repeat.value = "繰り返し線形に変更";
+    horizontalLine.value = "繰り返し線形（水平線）に変更";
+    multi.value = "繰り返し線形（複数）に変更";
+    check.value = "チェック柄に変更";
     fillCode();
 });
 
-repeatingLinear.addEventListener("click", () => {
-    if (repeatingLinear.value === "繰り返し線形に変更") {
-        textareaHTML.value = repeatingLinearHtmlSolutionEntry;
-        textareaCSS.value = repeatingLinearCssSolutionEntry;
-        repeatingLinear.value = "元に戻す";
+repeat.addEventListener("click", () => {
+    if (repeat.value === "繰り返し線形に変更") {
+        textareaHTML.value = repeatHtmlSolutionEntry;
+        textareaCSS.value = repeatCssSolutionEntry;
+        repeat.value = "元に戻す";
     } else {
         textareaHTML.value = htmlCode;
         textareaCSS.value = cssCode;
-        repeatingLinear.value = "繰り返し線形に変更";
+        repeat.value = "繰り返し線形に変更";
     }
     fillCode();
 });
 
-repeatingHorizontalLine.addEventListener("click", () => {
-    if (repeatingHorizontalLine.value === "繰り返し線形（水平線）に変更") {
-        textareaHTML.value = repeatingHorizontalLineHtmlSolutionEntry;
-        textareaCSS.value = repeatingHorizontalLineCssSolutionEntry;
-        repeatingHorizontalLine.value = "元に戻す";
+horizontalLine.addEventListener("click", () => {
+    if (horizontalLine.value === "繰り返し線形（水平線）に変更") {
+        textareaHTML.value = horizontalLineHtmlSolutionEntry;
+        textareaCSS.value = horizontalLineCssSolutionEntry;
+        horizontalLine.value = "元に戻す";
     } else {
         textareaHTML.value = htmlCode;
         textareaCSS.value = cssCode;
-        repeatingHorizontalLine.value = "繰り返し線形（水平線）に変更";
+        horizontalLine.value = "繰り返し線形（水平線）に変更";
     }
     fillCode();
 });
 
-multiRepeatingLinear.addEventListener("click", () => {
-    if (multiRepeatingLinear.value === "繰り返し線形（複数）に変更") {
-        textareaHTML.value = multiRepeatingLinearHtmlSolutionEntry;
-        textareaCSS.value = multiRepeatingLinearCssSolutionEntry;
-        multiRepeatingLinear.value = "元に戻す";
+multi.addEventListener("click", () => {
+    if (multi.value === "繰り返し線形（複数）に変更") {
+        textareaHTML.value = multiHtmlSolutionEntry;
+        textareaCSS.value = multiCssSolutionEntry;
+        multi.value = "元に戻す";
     } else {
         textareaHTML.value = htmlCode;
         textareaCSS.value = cssCode;
-        multiRepeatingLinear.value = "繰り返し線形（複数）に変更";
+        multi.value = "繰り返し線形（複数）に変更";
     }
     fillCode();
 });
 
-plaidGradient.addEventListener("click", () => {
-    if (plaidGradient.value === "チェック柄に変更") {
-        textareaHTML.value = plaidGradientHtmlSolutionEntry;
-        textareaCSS.value = plaidGradientCssSolutionEntry;
+check.addEventListener("click", () => {
+    if (check.value === "チェック柄に変更") {
+        textareaHTML.value = checkHtmlSolutionEntry;
+        textareaCSS.value = checkCssSolutionEntry;
         plaidGradient.value = "元に戻す";
     } else {
         textareaHTML.value = htmlCode;
         textareaCSS.value = cssCode;
-        plaidGradient.value = "チェック柄に変更";
+        check.value = "チェック柄に変更";
     }
     fillCode();
 });
