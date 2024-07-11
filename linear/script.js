@@ -22,8 +22,7 @@ const repeatingLinearCssSolution = `.repeatingLinear {
         -45deg,
         brown 0 5px,
         yellow 5px 10px);
-}
-`;
+}`;
 
 const repeatingHorizontalLineHtmlSolution = `<div class="box repeatingHorizontalLine"></div>`;
 const repeatingHorizontalLineCssSolution = `.repeatingHorizontalLine {
@@ -31,8 +30,7 @@ const repeatingHorizontalLineCssSolution = `.repeatingHorizontalLine {
         to top,
         rgb(30, 236, 240) 0% 8%,
         rgb(71, 6, 67) 20%);
-}
-`;
+}`;
 
 const multiRepeatingLinearHtmlSolution = `<div class="box multiRepeatingLinear"></div>`;
 const multiRepeatingLinearCssSolution = `.multiRepeatingLinear {
@@ -66,8 +64,7 @@ const multiRepeatingLinearCssSolution = `.multiRepeatingLinear {
                     indigo 60px,
                     violet 70px,
                     red 80px);
-}
-`;
+}`;
 
 const plaidGradientHtmlSolution = `<div class="box plaidGradient"></div>`;
 const plaidGradientCssSolution = `.plaidGradient {
@@ -95,8 +92,7 @@ const plaidGradientCssSolution = `.plaidGradient {
                     45deg,
                     transparent 0 5px,
                     rgba(113, 117, 36, 0.25) 5px 20px);
-}
-`;
+}`;
 
 let repeatingLinearHtmlSolutionEntry = repeatingLinearHtmlSolution;
 let repeatingLinearCssSolutionEntry = repeatingLinearCssSolution;
