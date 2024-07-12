@@ -21,7 +21,8 @@ const repeatCssSolution = `.repeat {
     background: repeating-radial-gradient(
         rgb(0, 255, 255, 0.7) 0 20px,
         rgb(0, 255, 255, 0.4) 20px 40px);
-}`;
+}
+`;
 
 const leftBottomHtmlSolution = `<div class="box leftBottom"></div>`;
 const leftBottomCssSolution = `.leftBottom {
@@ -29,7 +30,8 @@ const leftBottomCssSolution = `.leftBottom {
         ellipse farthest-corner at 25% 70%,
         yellow 0 5%,
         green 5% 10%);
-}`;
+}
+`;
 
 const rightTopHtmlSolution = `<div class="box rightTop"></div>`;
 const rightTopCssSolution = `.rightTop {
@@ -39,7 +41,8 @@ const rightTopCssSolution = `.rightTop {
         blue 5%,
         red 5%,
         green 10%);
-}`;
+}
+`;
 
 const multiHtmlSolution = `<div class="box multi"></div>`;
 const multiCssSolution = `.multi {
@@ -52,7 +55,8 @@ const multiCssSolution = `.multi {
                     rgba(0, 0, 0, 0.5) 0 10px,
                     rgba(255, 255, 255, 0.5) 10px 20px) top left no-repeat yellow;
     background-size: 200px 200px, 100px 100px, 200px 200px;
-}`;
+}
+`;
 
 let repeatHtmlSolutionEntry = repeatHtmlSolution;
 let repeatCssSolutionEntry = repeatCssSolution;
