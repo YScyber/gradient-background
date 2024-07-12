@@ -21,7 +21,8 @@ const repeatCssSolution = `.repeat {
     background: repeating-conic-gradient(
         orange 0deg 10deg,
         darkblue 10deg 20deg);
-}`;
+}
+`;
 
 const leftTopHtmlSolution = `<div class="box leftTop"></div>`;
 const leftTopCssSolution = `.leftTop {
@@ -29,7 +30,8 @@ const leftTopCssSolution = `.leftTop {
         from 3deg at 5% 5%,
         hsl(74, 100%, 50%) 0deg 10deg,
         hsl(200, 100%, 60%) 5deg 20deg);
-}`;
+}
+`;
 
 const rightBottomHtmlSolution = `<div class="box rightBottom"></div>`;
 const rightBottomCssSolution = `.rightBottom {
@@ -40,7 +42,8 @@ const rightBottomCssSolution = `.rightBottom {
         beige,
         red 15deg 18deg,
         beige 20deg);
-}`;
+}
+`;
 
 const ichimatsuHtmlSolution = `<div class="box ichimatsu"></div>`;
 const ichimatsuCssSolution = `.ichimatsu {
@@ -49,7 +52,8 @@ const ichimatsuCssSolution = `.ichimatsu {
         chocolate 0.25turn 0.5turn,
         black 0.5turn 0.75turn,
         chocolate 0.75turn) top left / 25% 25% repeat;
-}`;
+}
+`;
 
 let repeatHtmlSolutionEntry = repeatHtmlSolution;
 let repeatCssSolutionEntry = repeatCssSolution;
