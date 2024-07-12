@@ -22,7 +22,8 @@ const repeatCssSolution = `.repeat {
         -45deg,
         brown 0 5px,
         yellow 5px 10px);
-}`;
+}
+`;
 
 const horizonHtmlSolution = `<div class="box horizon"></div>`;
 const horizonCssSolution = `.horizon {
@@ -30,7 +31,8 @@ const horizonCssSolution = `.horizon {
         to top,
         rgb(30, 236, 240) 0% 8%,
         rgb(71, 6, 67) 20%);
-}`;
+}
+`;
 
 const multiHtmlSolution = `<div class="box multi"></div>`;
 const multiCssSolution = `.multi {
@@ -64,7 +66,8 @@ const multiCssSolution = `.multi {
                     indigo 60px,
                     violet 70px,
                     red 80px);
-}`;
+}
+`;
 
 const plaidHtmlSolution = `<div class="box plaid"></div>`;
 const plaidCssSolution = `.plaid {
@@ -92,7 +95,8 @@ const plaidCssSolution = `.plaid {
                     45deg,
                     transparent 0 5px,
                     rgba(113, 117, 36, 0.25) 5px 20px);
-}`;
+}
+`;
 
 let repeatHtmlSolutionEntry = repeatHtmlSolution;
 let repeatCssSolutionEntry = repeatCssSolution;
