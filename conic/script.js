@@ -17,7 +17,7 @@ function fillCode() {
 }
 
 const repeatHtmlSolution = `<div class="box repeat"></div>`;
-const repeatCssSolution = `.repeat {
+const repeatCssSolution = `div.repeat {
     background: repeating-conic-gradient(
         orange 0deg 10deg,
         darkblue 10deg 20deg);
@@ -25,7 +25,7 @@ const repeatCssSolution = `.repeat {
 `;
 
 const leftTopHtmlSolution = `<div class="box leftTop"></div>`;
-const leftTopCssSolution = `.leftTop {
+const leftTopCssSolution = `div.leftTop {
     background: repeating-conic-gradient(
         from 3deg at 5% 5%,
         hsl(74, 100%, 50%) 0deg 10deg,
@@ -34,7 +34,7 @@ const leftTopCssSolution = `.leftTop {
 `;
 
 const rightBottomHtmlSolution = `<div class="box rightBottom"></div>`;
-const rightBottomCssSolution = `.rightBottom {
+const rightBottomCssSolution = `div.rightBottom {
     background: repeating-conic-gradient(
         from 3deg at 75% 75%,
         beige,
@@ -46,7 +46,7 @@ const rightBottomCssSolution = `.rightBottom {
 `;
 
 const ichimatsuHtmlSolution = `<div class="box ichimatsu"></div>`;
-const ichimatsuCssSolution = `.ichimatsu {
+const ichimatsuCssSolution = `div.ichimatsu {
     background: conic-gradient(
         black 0.25turn,
         chocolate 0.25turn 0.5turn,
