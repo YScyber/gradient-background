@@ -17,7 +17,7 @@ function fillCode() {
 }
 
 const repeatHtmlSolution = `<div class="box repeat"></div>`;
-const repeatCssSolution = `.repeat {
+const repeatCssSolution = `div.repeat {
     background: repeating-linear-gradient(
         -45deg,
         brown 0 5px,
@@ -26,7 +26,7 @@ const repeatCssSolution = `.repeat {
 `;
 
 const horizonHtmlSolution = `<div class="box horizon"></div>`;
-const horizonCssSolution = `.horizon {
+const horizonCssSolution = `div.horizon {
     background: repeating-linear-gradient(
         to top,
         rgb(30, 236, 240) 0% 8%,
@@ -35,7 +35,7 @@ const horizonCssSolution = `.horizon {
 `;
 
 const multiHtmlSolution = `<div class="box multi"></div>`;
-const multiCssSolution = `.multi {
+const multiCssSolution = `div.multi {
     background: repeating-linear-gradient(
                     190deg,
                     rgba(255, 0, 0, 0.5) 10px,
@@ -70,7 +70,7 @@ const multiCssSolution = `.multi {
 `;
 
 const plaidHtmlSolution = `<div class="box plaid"></div>`;
-const plaidCssSolution = `.plaid {
+const plaidCssSolution = `div.plaid {
     background: repeating-linear-gradient(
                     90deg,
                     transparent 0 15px,
