@@ -11,14 +11,6 @@ body {
     background-color: #f8f8f8;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-header {
-    padding: 20px 0 0 20px;
-}
-
 nav ul li {
     line-height: 2.5;
 }
