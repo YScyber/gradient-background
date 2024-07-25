@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    margin: auto;
+    margin: 0 auto;
     padding: 0;
     width: 60%;
     max-width: 600px;
