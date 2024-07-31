@@ -37,35 +37,35 @@ const horizonCssSolution = `div.horizon {
 const multiHtmlSolution = `<div class="box multi"></div>`;
 const multiCssSolution = `div.multi {
     background: repeating-linear-gradient(
-                    190deg,
-                    rgba(255, 0, 0, 0.5) 10px,
-                    rgba(255, 153, 0, 0.5) 30px,
-                    rgba(255, 255, 0, 0.5) 50px,
-                    rgba(0, 255, 0, 0.5) 70px,
-                    rgba(0, 0, 255, 0.5) 90px,
-                    rgba(75, 0, 130, 0.5) 110px,
-                    rgba(238, 130, 238, 0.5) 130px,
-                    rgba(255, 0, 0, 0.5) 150px),
-                repeating-linear-gradient(
-                    -190deg,
-                    rgba(255, 0, 0, 0.5) 20px,
-                    rgba(255, 153, 0, 0.5) 40px,
-                    rgba(255, 255, 0, 0.5) 60px,
-                    rgba(0, 255, 0, 0.5) 80px,
-                    rgba(0, 0, 255, 0.5) 100px,
-                    rgba(75, 0, 130, 0.5) 120px,
-                    rgba(238, 130, 238, 0.5) 140px,
-                    rgba(255, 0, 0, 0.5) 160px),
-                repeating-linear-gradient(
-                    23deg,
-                    red 10px,
-                    orange 20px,
-                    yellow 30px,
-                    green 40px,
-                    blue 50px,
-                    indigo 60px,
-                    violet 70px,
-                    red 80px);
+        190deg,
+        rgba(255, 0, 0, 0.5) 10px,
+        rgba(255, 153, 0, 0.5) 30px,
+        rgba(255, 255, 0, 0.5) 50px,
+        rgba(0, 255, 0, 0.5) 70px,
+        rgba(0, 0, 255, 0.5) 90px,
+        rgba(75, 0, 130, 0.5) 110px,
+        rgba(238, 130, 238, 0.5) 130px,
+        rgba(255, 0, 0, 0.5) 150px),
+    repeating-linear-gradient(
+        -190deg,
+        rgba(255, 0, 0, 0.5) 20px,
+        rgba(255, 153, 0, 0.5) 40px,
+        rgba(255, 255, 0, 0.5) 60px,
+        rgba(0, 255, 0, 0.5) 80px,
+        rgba(0, 0, 255, 0.5) 100px,
+        rgba(75, 0, 130, 0.5) 120px,
+        rgba(238, 130, 238, 0.5) 140px,
+        rgba(255, 0, 0, 0.5) 160px),
+    repeating-linear-gradient(
+        23deg,
+        red 10px,
+        orange 20px,
+        yellow 30px,
+        green 40px,
+        blue 50px,
+        indigo 60px,
+        violet 70px,
+        red 80px);
 }
 `;
 
