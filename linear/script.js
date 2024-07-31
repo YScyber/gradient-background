@@ -72,29 +72,29 @@ const multiCssSolution = `div.multi {
 const plaidHtmlSolution = `<div class="box plaid"></div>`;
 const plaidCssSolution = `div.plaid {
     background: repeating-linear-gradient(
-                    90deg,
-                    transparent 0 15px,
-                    rgba(21, 27, 0, 0.25) 15px 30px,
-                    transparent 30px 45px,
-                    rgba(21, 27, 0, 0.25) 45px 60px,
-                    transparent 60px 75px,
-                    rgba(21, 0, 106, 0.25) 75px 90px),
-                repeating-linear-gradient(
-                    0deg,
-                    transparent 0 15px,
-                    rgba(21, 27, 0, 0.25) 15px 30px,
-                    transparent 30px 45px,
-                    rgba(21, 27, 0, 0.25) 45px 60px,
-                    transparent 60px 75px,
-                    rgba(21, 0, 106, 0.25) 75px 90px),
-                repeating-linear-gradient(
-                    -45deg,
-                    transparent 0 5px,
-                    rgba(113, 117, 36, 0.25) 5px 20px),
-                repeating-linear-gradient(
-                    45deg,
-                    transparent 0 5px,
-                    rgba(113, 117, 36, 0.25) 5px 20px);
+        90deg,
+        transparent 0 15px,
+        rgba(21, 27, 0, 0.25) 15px 30px,
+        transparent 30px 45px,
+        rgba(21, 27, 0, 0.25) 45px 60px,
+        transparent 60px 75px,
+        rgba(21, 0, 106, 0.25) 75px 90px),
+    repeating-linear-gradient(
+        0deg,
+        transparent 0 15px,
+        rgba(21, 27, 0, 0.25) 15px 30px,
+        transparent 30px 45px,
+        rgba(21, 27, 0, 0.25) 45px 60px,
+        transparent 60px 75px,
+        rgba(21, 0, 106, 0.25) 75px 90px),
+    repeating-linear-gradient(
+        -45deg,
+        transparent 0 5px,
+        rgba(113, 117, 36, 0.25) 5px 20px),
+    repeating-linear-gradient(
+        45deg,
+        transparent 0 5px,
+        rgba(113, 117, 36, 0.25) 5px 20px);
 }
 `;
 
