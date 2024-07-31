@@ -47,13 +47,13 @@ const rightTopCssSolution = `div.rightTop {
 const multiHtmlSolution = `<div class="box multi"></div>`;
 const multiCssSolution = `div.multi {
     background: repeating-radial-gradient(
-                    ellipse at 80% 80%,
-                    rgba(0, 0, 0, 0.5) 0 15px,
-                    rgba(255, 255, 255, 0.5) 15px 30px) bottom right no-repeat,
-                repeating-radial-gradient(
-                    ellipse at 25% 25%,
-                    rgba(0, 0, 0, 0.5) 0 10px,
-                    rgba(255, 255, 255, 0.5) 10px 20px) top left no-repeat yellow;
+        ellipse at 80% 80%,
+        rgba(0, 0, 0, 0.5) 0 15px,
+        rgba(255, 255, 255, 0.5) 15px 30px) bottom right no-repeat,
+    repeating-radial-gradient(
+        ellipse at 25% 25%,
+        rgba(0, 0, 0, 0.5) 0 10px,
+        rgba(255, 255, 255, 0.5) 10px 20px) top left no-repeat yellow;
     background-size: 200px 200px, 100px 100px, 200px 200px;
 }
 `;
