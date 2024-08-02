@@ -17,7 +17,15 @@ function fillCode() {
 }
 
 const repeatHtmlSolution = `<div class="box repeat"></div>`;
-const repeatCssSolution = `div.repeat {
+const repeatCssSolution = `div.box {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+div.repeat {
     background: repeating-conic-gradient(
         orange 0deg 10deg,
         darkblue 10deg 20deg);
@@ -25,7 +33,15 @@ const repeatCssSolution = `div.repeat {
 `;
 
 const leftTopHtmlSolution = `<div class="box leftTop"></div>`;
-const leftTopCssSolution = `div.leftTop {
+const leftTopCssSolution = `div.box {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+div.leftTop {
     background: repeating-conic-gradient(
         from 3deg at 5% 5%,
         hsl(74, 100%, 50%) 0deg 10deg,
@@ -34,7 +50,15 @@ const leftTopCssSolution = `div.leftTop {
 `;
 
 const rightBottomHtmlSolution = `<div class="box rightBottom"></div>`;
-const rightBottomCssSolution = `div.rightBottom {
+const rightBottomCssSolution = `div.box {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+div.rightBottom {
     background: repeating-conic-gradient(
         from 3deg at 75% 75%,
         beige,
@@ -46,7 +70,15 @@ const rightBottomCssSolution = `div.rightBottom {
 `;
 
 const ichimatsuHtmlSolution = `<div class="box ichimatsu"></div>`;
-const ichimatsuCssSolution = `div.ichimatsu {
+const ichimatsuCssSolution = `div.box {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+div.ichimatsu {
     background: conic-gradient(
         black 0.25turn,
         chocolate 0.25turn 0.5turn,
