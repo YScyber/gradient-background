@@ -17,7 +17,15 @@ function fillCode() {
 }
 
 const repeatHtmlSolution = `<div class="box repeat"></div>`;
-const repeatCssSolution = `div.repeat {
+const repeatCssSolution = `div.box {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+div.repeat {
     background: repeating-linear-gradient(
         -45deg,
         brown 0 5px,
@@ -26,7 +34,15 @@ const repeatCssSolution = `div.repeat {
 `;
 
 const horizonHtmlSolution = `<div class="box horizon"></div>`;
-const horizonCssSolution = `div.horizon {
+const horizonCssSolution = `div.box {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+div.horizon {
     background: repeating-linear-gradient(
         to top,
         rgb(30, 236, 240) 0% 8%,
@@ -35,7 +51,15 @@ const horizonCssSolution = `div.horizon {
 `;
 
 const multiHtmlSolution = `<div class="box multi"></div>`;
-const multiCssSolution = `div.multi {
+const multiCssSolution = `div.box {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+div.multi {
     background: repeating-linear-gradient(
         190deg,
         rgba(255, 0, 0, 0.5) 10px,
@@ -70,7 +94,15 @@ const multiCssSolution = `div.multi {
 `;
 
 const plaidHtmlSolution = `<div class="box plaid"></div>`;
-const plaidCssSolution = `div.plaid {
+const plaidCssSolution = `div.box {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+div.plaid {
     background: repeating-linear-gradient(
         90deg,
         transparent 0 15px,
