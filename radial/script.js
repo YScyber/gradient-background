@@ -17,7 +17,15 @@ function fillCode() {
 }
 
 const repeatHtmlSolution = `<div class="box repeat"></div>`;
-const repeatCssSolution = `div.repeat {
+const repeatCssSolution = `div.box {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+div.repeat {
     background: repeating-radial-gradient(
         rgb(0, 255, 255, 0.7) 0 20px,
         rgb(0, 255, 255, 0.4) 20px 40px);
@@ -25,7 +33,15 @@ const repeatCssSolution = `div.repeat {
 `;
 
 const leftBottomHtmlSolution = `<div class="box leftBottom"></div>`;
-const leftBottomCssSolution = `div.leftBottom {
+const leftBottomCssSolution = `div.box {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+div.leftBottom {
     background: repeating-radial-gradient(
         ellipse farthest-corner at 25% 70%,
         yellow 0 5%,
@@ -34,7 +50,15 @@ const leftBottomCssSolution = `div.leftBottom {
 `;
 
 const rightTopHtmlSolution = `<div class="box rightTop"></div>`;
-const rightTopCssSolution = `div.rightTop {
+const rightTopCssSolution = `div.box {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+div.rightTop {
     background: repeating-radial-gradient(
         ellipse farthest-corner at 75% 30%,
         black,
@@ -45,7 +69,15 @@ const rightTopCssSolution = `div.rightTop {
 `;
 
 const multiHtmlSolution = `<div class="box multi"></div>`;
-const multiCssSolution = `div.multi {
+const multiCssSolution = `div.box {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+div.multi {
     background: repeating-radial-gradient(
         ellipse at 80% 80%,
         rgba(0, 0, 0, 0.5) 0 15px,
